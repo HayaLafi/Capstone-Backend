@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://employeeservices.heroku.com")
 @RequestMapping(path = "api/complain")
 public class ComplainController {
     private ComplainService complainService ;

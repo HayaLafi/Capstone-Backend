@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://employeeservices.heroku.com")
 @RequestMapping(path = "api/holiday")
 public class HolidayController {
     @Value("${upload.path}")
