@@ -5,9 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
-
+@CrossOrigin(origins = "https://employeeservices.herokuapp.com/")
 @RestController
-@CrossOrigin(origins = "http://employeeservices.heroku.com")
 @RequestMapping(path = "api/complain")
 public class ComplainController {
     private ComplainService complainService ;

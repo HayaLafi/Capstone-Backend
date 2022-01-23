@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+@CrossOrigin(origins = "https://employeeservices.herokuapp.com/")
 @RestController
-@CrossOrigin(origins = "http://employeeservices.heroku.com")
 @RequestMapping(path = "api/permission")
 public class PermissionController {
     private PermissionService permissionService ;
